@@ -14,7 +14,7 @@ export function BottleSection() {
   const { ref, isInView } = useInView<HTMLElement>({ threshold: 0.2 })
 
   return (
-    <section ref={ref} className="py-16 lg:py-24 bg-geko-cream">
+    <section ref={ref} className="py-16 lg:py-24 pb-32 lg:pb-48 bg-[#CCDD60]">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className={`text-center mb-12 ${isInView ? "animate-slide-in-up" : "opacity-0"}`}>
@@ -27,7 +27,7 @@ export function BottleSection() {
         </div>
 
         {/* Bottle with transformations */}
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-4xl mx-auto mt-24">
           <div className="grid grid-cols-3 gap-4 items-center">
             {/* Left transformations */}
             <div className="space-y-16">
@@ -47,14 +47,16 @@ export function BottleSection() {
             </div>
 
             {/* Center - Bottle */}
-            <div className={`flex justify-center ${isInView ? "animate-fade-in" : "opacity-0"}`}>
-              <Image
-                src="/images/plastic-bottle.png"
-                alt="Plastic Bottle"
-                width={200}
-                height={400}
-                className="h-auto w-32 md:w-40 animate-bop"
-              />
+            <div className={`flex justify-center mt-16 ${isInView ? "animate-fade-in" : "opacity-0"}`}>
+              <div className="scale-[3] origin-center">
+                <Image
+                  src="/images/plastic-bottle.png"
+                  alt="Plastic Bottle"
+                  width={200}
+                  height={400}
+                  className="h-auto w-32 md:w-40 animate-bop"
+                />
+              </div>
             </div>
 
             {/* Right transformations */}

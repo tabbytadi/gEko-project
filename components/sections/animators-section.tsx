@@ -25,7 +25,7 @@ export function AnimatorsSection() {
   const { ref, isInView } = useInView<HTMLElement>({ threshold: 0.2 })
 
   return (
-    <section ref={ref} id="animators" className="py-16 lg:py-24 bg-geko-cream">
+    <section ref={ref} id="animators" className="py-16 lg:py-24 bg-[#CCDD60]">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className={`text-center mb-12 ${isInView ? "animate-slide-in-up" : "opacity-0"}`}>

@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
-          <div className={`space-y-6 ${isInView ? "animate-slide-in-left" : "opacity-0"}`}>
+          <div className={`space-y-6 ml-8 ${isInView ? "animate-slide-in-left" : "opacity-0"}`}>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-geko-dark leading-tight text-balance">
               гЕко: Превърни старата си бутилка в супер сила!
             </h1>
